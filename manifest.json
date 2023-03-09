@@ -1,0 +1,12 @@
+{
+  "name": "Chrome Darkmode",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Turn websites into darkmode",
+  "permissions": ["activeTab"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "css": ["style.css"],
+    "run_at": "document_end"
+  }]
+}
